@@ -1,0 +1,6 @@
+.display {
+   display: flex;
+   flex-direction: row-reverse;
+   padding: 30px 15px;
+   font-size: 2.5em;
+}

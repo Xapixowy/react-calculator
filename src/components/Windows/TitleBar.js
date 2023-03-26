@@ -11,17 +11,17 @@ const TitleBar = (props) => {
 
    return (
       <div className={styles['title-bar']}>
-         <Icon />
+         <Icon size={18} className={styles.icon} />
          <p className={styles.title}>{title}</p>
          <div className={styles.buttons}>
             <button className={styles['button']}>
-               <IconMinus />
+               <IconMinus size={15} />
             </button>
             <button className={styles['button']}>
-               <IconSquareRounded />
+               <IconSquareRounded size={13} />
             </button>
             <button className={styles['button']}>
-               <IconX />
+               <IconX size={15} />
             </button>
          </div>
       </div>

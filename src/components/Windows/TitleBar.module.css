@@ -1,0 +1,49 @@
+.title-bar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 15px;
+   margin-bottom: 15px;
+}
+
+.icon {
+   margin-left: 15px;
+}
+
+.title {
+   font-size: 0.7em;
+   flex-grow: 1;
+   margin: 0;
+}
+
+.buttons {
+   display: flex;
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 26px;
+   background-color: transparent;
+   color: var(--lighter-grey);
+   border: none;
+}
+
+.button:hover {
+   color: var(--white);
+   background-color: var(--darker-grey);
+}
+
+.button:active {
+   background-color: var(--grey);
+}
+
+.button:last-child:hover {
+   background-color: #c42b1c;
+}
+
+.button:last-child:active {
+   background-color: #b3271c;
+}

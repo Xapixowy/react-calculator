@@ -1,0 +1,7 @@
+.calculator {
+   background-color: var(--dark-grey);
+   color: var(--white);
+   border-radius: 8px;
+   border: 2px solid var(--darker-grey);
+   overflow: hidden;
+}

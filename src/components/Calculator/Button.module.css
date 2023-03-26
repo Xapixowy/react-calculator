@@ -1,0 +1,51 @@
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   border-radius: 5px;
+   color: var(--white);
+}
+
+.button.dark {
+   background-color: var(--darker-grey);
+}
+
+.button.dark:hover {
+   border: 2px solid var(--darker-grey);
+   background-color: var(--grey);
+}
+
+.button.dark:active {
+   border: none;
+   background-color: var(--darker-grey);
+   color: var(--light-grey);
+}
+
+.button.light {
+   border: 2px solid var(--darker-grey);
+   background-color: var(--grey);
+}
+
+.button.light:hover {
+   background-color: var(--darker-grey);
+}
+
+.button.light:active {
+   background-color: var(--dark-grey);
+   color: var(--light-grey);
+}
+
+.button.equal {
+   color: black;
+   background-color: #f46762;
+}
+
+.button.equal:hover {
+   background-color: #de5f5b;
+}
+
+.button.equal:active {
+   background-color: #c95855;
+   color: var(--dark-grey);
+}

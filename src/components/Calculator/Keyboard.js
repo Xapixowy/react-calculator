@@ -35,7 +35,7 @@ const Keyboard = () => {
          <Button icon={IconSquareLetterC} type="dark" />
          <Button icon={IconLetterC} type="dark" />
          <Button icon={IconBackspace} type="dark" />
-         <Button icon={IconMathXDivide2} type="dark" rotate={180} />
+         <Button icon={IconMathXDivide2} type="dark" />
          <Button icon={IconSuperscript} type="dark" />
          <Button icon={IconSquareRoot2} type="dark" />
          <Button icon={IconDivide} type="dark" />
@@ -54,7 +54,7 @@ const Keyboard = () => {
          <Button icon={IconPlusMinus} />
          <Button icon={IconNumber0} />
          <Button icon={IconPointFilled} />
-         <Button icon={IconEqual} />
+         <Button icon={IconEqual} type="equal" />
       </div>
    );
 };

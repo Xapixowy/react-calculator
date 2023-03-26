@@ -11,11 +11,11 @@ const MenuBar = (props) => {
    return (
       <div className={styles['menu-bar']}>
          <button className={styles['hamburger-menu']}>
-            <IconMenu2 />
+            <IconMenu2 size={15} />
          </button>
          <p className={styles.mode}>{mode}</p>
          <button className={styles.history}>
-            <IconHistory />
+            <IconHistory size={15} />
          </button>
       </div>
    );

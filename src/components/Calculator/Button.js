@@ -3,17 +3,18 @@ import React, { useRef } from 'react';
 import styles from './Button.module.css';
 
 const Button = (props) => {
-   const { value, icon: Icon, onClick, type, rotate } = props;
+   const { value, icon: Icon, onClick, type } = props;
 
-   const className = `${styles.button} ${props.className ? props.className : ''} ${type === 'dark' ? 'dark' : 'light'}`;
+   let buttonType = styles.light;
 
-   const element = useRef();
+   if (type === 'dark') buttonType = styles.dark;
+   else if (type === 'equal') buttonType = styles.equal;
 
-   if (rotate) element.current.style.transform = `rotate(${rotate}deg)`;
+   const className = `${styles.button} ${props.className ? props.className : ''} ${buttonType}`;
 
    return (
-      <button className={className} onClick={onClick} ref={element}>
-         {Icon && <Icon />}
+      <button className={className} onClick={onClick}>
+         {Icon && <Icon size={15} />}
          {value}
       </button>
    );

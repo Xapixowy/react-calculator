@@ -1,0 +1,32 @@
+.menu-bar {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 0 15px;
+   color: var(--white);
+}
+
+.mode {
+   margin: 0;
+   flex-grow: 1;
+   font-weight: 700;
+}
+
+.menu-bar button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 24px;
+   border: none;
+   background-color: transparent;
+   color: var(--white);
+}
+
+.menu-bar button:hover {
+   border-radius: 5px;
+   background-color: var(--darker-grey);
+}
+
+.menu-bar button:active {
+   color: var(--light-grey);
+}

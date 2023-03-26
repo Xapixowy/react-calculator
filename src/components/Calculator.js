@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Calculator.js';
+import styles from './Calculator.module.css';
 
 import { IconCalculator } from '@tabler/icons-react';
 import TitleBar from './Windows/TitleBar.js';
