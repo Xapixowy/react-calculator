@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 
 import styles from './Calculator.module.css';
 
@@ -8,7 +8,16 @@ import MenuBar from './Calculator/MenuBar.js';
 import Display from './Calculator/Display.js';
 import Keyboard from './Calculator/Keyboard.js';
 
+const defaultCalculator = {
+   prevValue: 0,
+   operation: '',
+   value: 0,
+   history: [],
+};
+
 const Calculator = () => {
+   const [calculator, dispatchCalculator] = useReducer();
+
    return (
       <div className={styles.calculator}>
          <TitleBar icon={IconCalculator} title="Calculator" />

@@ -4,6 +4,7 @@
    gap: 10px;
    padding: 0 15px;
    color: var(--white);
+   user-select: none;
 }
 
 .mode {

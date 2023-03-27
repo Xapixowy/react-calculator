@@ -13,7 +13,6 @@ import { IconMinus } from '@tabler/icons-react';
 import { IconPlus } from '@tabler/icons-react';
 import { IconPlusMinus } from '@tabler/icons-react';
 import { IconEqual } from '@tabler/icons-react';
-import { IconPointFilled } from '@tabler/icons-react';
 import { IconNumber0 } from '@tabler/icons-react';
 import { IconNumber1 } from '@tabler/icons-react';
 import { IconNumber2 } from '@tabler/icons-react';
@@ -53,7 +52,7 @@ const Keyboard = () => {
          <Button icon={IconPlus} type="dark" />
          <Button icon={IconPlusMinus} />
          <Button icon={IconNumber0} />
-         <Button icon={IconPointFilled} />
+         <Button value="." />
          <Button icon={IconEqual} type="equal" />
       </div>
    );
