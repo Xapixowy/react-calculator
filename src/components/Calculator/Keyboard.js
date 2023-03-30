@@ -27,33 +27,35 @@ import { IconLetterC } from '@tabler/icons-react';
 import { IconPercentage } from '@tabler/icons-react';
 import { IconSquareLetterC } from '@tabler/icons-react';
 
-const Keyboard = () => {
+const Keyboard = (props) => {
+   const { dispatchCalculator } = props;
+
    return (
       <div className={styles.keyboard}>
-         <Button icon={IconPercentage} type="dark" />
-         <Button icon={IconSquareLetterC} type="dark" />
-         <Button icon={IconLetterC} type="dark" />
-         <Button icon={IconBackspace} type="dark" />
-         <Button icon={IconMathXDivide2} type="dark" />
-         <Button icon={IconSuperscript} type="dark" />
-         <Button icon={IconSquareRoot2} type="dark" />
-         <Button icon={IconDivide} type="dark" />
-         <Button icon={IconNumber7} />
-         <Button icon={IconNumber8} />
-         <Button icon={IconNumber9} />
-         <Button icon={IconX} type="dark" />
-         <Button icon={IconNumber4} />
-         <Button icon={IconNumber5} />
-         <Button icon={IconNumber6} />
-         <Button icon={IconMinus} type="dark" />
-         <Button icon={IconNumber1} />
-         <Button icon={IconNumber2} />
-         <Button icon={IconNumber3} />
-         <Button icon={IconPlus} type="dark" />
-         <Button icon={IconPlusMinus} />
-         <Button icon={IconNumber0} />
-         <Button value="." />
-         <Button icon={IconEqual} type="equal" />
+         <Button onClick={dispatchCalculator} dispatchType="PERCENTAGE" icon={IconPercentage} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="CLEAR-ENTRY" icon={IconSquareLetterC} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="CLEAR" icon={IconLetterC} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="BACKSPACE" icon={IconBackspace} type="dark" />
+         <Button onClick={dispatchCalculator} icon={IconMathXDivide2} type="dark" />
+         <Button onClick={dispatchCalculator} icon={IconSuperscript} type="dark" />
+         <Button onClick={dispatchCalculator} icon={IconSquareRoot2} type="dark" />
+         <Button onClick={dispatchCalculator} icon={IconDivide} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={7} icon={IconNumber7} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={8} icon={IconNumber8} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={9} icon={IconNumber9} />
+         <Button onClick={dispatchCalculator} icon={IconX} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={4} icon={IconNumber4} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={5} icon={IconNumber5} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={6} icon={IconNumber6} />
+         <Button onClick={dispatchCalculator} icon={IconMinus} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={1} icon={IconNumber1} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={2} icon={IconNumber2} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={3} icon={IconNumber3} />
+         <Button onClick={dispatchCalculator} icon={IconPlus} type="dark" />
+         <Button onClick={dispatchCalculator} dispatchType="INVERSE" icon={IconPlusMinus} />
+         <Button onClick={dispatchCalculator} dispatchType="VALUE" dispatchValue={0} icon={IconNumber0} />
+         <Button onClick={dispatchCalculator} dispatchType="COMMA" value="." />
+         <Button onClick={dispatchCalculator} icon={IconEqual} type="equal" />
       </div>
    );
 };
